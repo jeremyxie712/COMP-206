@@ -1,6 +1,5 @@
 This is the Question 2 of the COMP206 Assignment 3.  
 Jeremy Xie   
-McGill ID: 260660974
 
 # Explanation 
 The `main` fucntion in **movie.c** loads preferences of users text file by calling `load_one_preference` function in **preference.c**. It reads the file by lines (*It uses global variables defined in header files*) and then calls the `LOAD_FIELD` function who has an array of function pointers `input_fcn_array` decide to point to the appropriate functions. The `DEBUG` was then used and `print_preference` was called, a function who calls the `PRINT_FIELD` who also possesses `output_fcn_array` to decide to point to the appropriate function. It calls the **distance.c** to compute the distance, lower closer, eventually it prints the best match by using `DEBUG`.
